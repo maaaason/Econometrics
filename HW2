@@ -1,1 +1,12 @@
+## assignment 1
+setwd("C:/Users/admin/Desktop/Mason/Junior/Econometrics/HW")
+gdp <- read.table("./R data/tw_gdp.csv",header=T,sep=",")
+head(gdp)
+str(gdp)
+
+##assignment 2
+gdp <- read.table("./R data/tw_gdp.csv",header=T,sep=",",skip=3)
+gdp$Year <- as.numeric(as.character(gdp$Year))
+gdp <- na.omit(gdp)
+
 
