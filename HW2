@@ -9,4 +9,7 @@ gdp <- read.table("./R data/tw_gdp.csv",header=T,sep=",",skip=3)
 gdp$Year <- as.numeric(as.character(gdp$Year))
 gdp <- na.omit(gdp)
 
-
+##assignment 3
+##with intercept
+x1 <- cbind(1,gdp[,"Year"])
+y1 <- c(gdp[,"GDP"])
