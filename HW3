@@ -22,3 +22,4 @@ ggplot(data=gdp, aes(x=Year, y=GDP, group=Country, colour=Country))+
   +     ggtitle("Cross-country Comparison of GDP")
   +     geom_line(size=1.7) 
   +     geom_point(size=2)
+  +     ylab("GDP(U.S dollars)")
